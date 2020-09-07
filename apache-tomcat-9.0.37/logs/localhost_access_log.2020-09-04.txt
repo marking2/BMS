@@ -1,0 +1,9 @@
+0:0:0:0:0:0:0:1 - - [04/Sep/2020:13:37:54 +0300] "GET /hello/querybook.html HTTP/1.1" 200 486
+0:0:0:0:0:0:0:1 - - [04/Sep/2020:13:37:56 +0300] "GET /hello/query?author=Tan+Ah+Teck HTTP/1.1" 404 766
+0:0:0:0:0:0:0:1 - - [04/Sep/2020:13:40:09 +0300] "GET /hello/query?author=Tan+Ah+Teck&author=Mohammad+Ali&author=Kumar HTTP/1.1" 404 766
+0:0:0:0:0:0:0:1 - - [04/Sep/2020:13:55:00 +0300] "GET /hello/query?author=Tan+Ah+Teck&author=Mohammad+Ali&author=Kumar HTTP/1.1" 404 766
+0:0:0:0:0:0:0:1 - - [04/Sep/2020:13:55:00 +0300] "GET /favicon.ico HTTP/1.1" 200 21630
+0:0:0:0:0:0:0:1 - - [04/Sep/2020:13:55:03 +0300] "GET /hello/query?author=Tan+Ah+Teck&author=Mohammad+Ali&author=Kumar HTTP/1.1" 404 766
+0:0:0:0:0:0:0:1 - - [04/Sep/2020:14:11:49 +0300] "GET /hello/querybook.html HTTP/1.1" 304 -
+0:0:0:0:0:0:0:1 - - [04/Sep/2020:14:11:52 +0300] "GET /hello/query?author=Tan+Ah+Teck&author=Mohammad+Ali HTTP/1.1" 404 766
+0:0:0:0:0:0:0:1 - - [04/Sep/2020:14:13:19 +0300] "GET /hello/query?author=Tan+Ah+Teck HTTP/1.1" 404 766

@@ -118,10 +118,6 @@ public class Bank {
         accounts[getSize() - 1] = acc;
     }
 
-    void merge_accounts(){
-        
-    }
-
     Account find_account(){
         System.out.println("Please Enter the following: ");
         System.out.println("1. ID ");
@@ -153,13 +149,19 @@ public class Bank {
         current.print_account();
     }
 
-    void show_accounts(){
-        System.out.println("Customers List: ");
-        for (int i = 0; i < this.getSize(); i++)
-        {
-            accounts[i].print_account();
-            System.out.println();
+    private void show_accounts(){
+        System.out.println("Please enter key: ");
+        int key = scanner.nextInt();
+        if(key == 1111){
+            System.out.println("Customers List: ");
+            for (int i = 0; i < this.getSize(); i++)
+            {
+                accounts[i].print_account();
+                System.out.println();
+            }
         }
+        else
+            System.out.println("Permission denied!");
     }
 
     void show_menu(){
@@ -168,10 +170,9 @@ public class Bank {
         System.out.println("1. Create a new account. ");
         System.out.println("2. transactions. ");
         System.out.println("3. Update account information. ");
-        System.out.println("4. Merge accounts. ");
-        System.out.println("5. Show account's info.");
-        System.out.println("6. Show all accounts info.");
-        System.out.println("7. Exit");
+        System.out.println("4. Show account's info.");
+        System.out.println("5. Show all accounts info. *Permission Needed");
+        System.out.println("6. Exit");
     
         choice = scanner.nextInt();
 
@@ -186,15 +187,12 @@ public class Bank {
             update_acc_info();
             break;
         case 4:
-            merge_accounts();
-            break;
-        case 5:
             print_acc_info();
             break;
-        case 6:
+        case 5:
             show_accounts();
             break;
-        case 7:
+        case 6:
             return;
         }
         show_menu();
